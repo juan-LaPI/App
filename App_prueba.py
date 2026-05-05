@@ -273,9 +273,9 @@ elif st.session_state.screen == 2:
             '''
             st.markdown(textwrap.dedent(html_3), unsafe_allow_html=True)
                             
-            N_4 = st.slider(' ',min_value=1, max_value=len(temp_png_dtcs), step=1, key = 'N_4')
+            N_4 = st.slider(' ',min_value=1, max_value=len(temp_png_dtcs[0]), step=1, key = 'N_4')
             
-            xmin, xmax, z, u = 0, len(temp_png_dtcs), Indcs[0][0], Indcs[0][1]+1 
+            xmin, xmax, z, u = 0, len(temp_png_dtcs[0]), Indcs[0][0], Indcs[0][1]+1 
             
             width = 100
             start = (z-xmin)/(xmax-xmin)*100
