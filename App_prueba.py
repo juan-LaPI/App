@@ -192,7 +192,7 @@ elif st.session_state.screen == 2:
                 temp_png_mask = carpetaPNG(V_mask[:,:,:],0)
                 temp_png_dtcs.append(temp_png_dtc)
                 temp_png_masks.append(temp_png_mask)
-                sld_nums.Indcs([i_max, i_min])
+                Indcs.append([i_max, i_min])
 
             st.session_state.temp_png_dtcs = temp_png_dtcs
             st.session_state.temp_png_masks = temp_png_masks
