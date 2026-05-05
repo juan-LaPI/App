@@ -326,8 +326,8 @@ elif st.session_state.screen == 2:
                     </div>
                     ''', unsafe_allow_html=True)
 
-            img_orig_user_4 = Image.open(os.path.join(temp_png_dtcs, f'slice_{(N_4-1):03d}.png'))
-            img_fnl_user_4 = Image.open(os.path.join(temp_png_masks, f'slice_{(N_4-1):03d}.png'))
+            img_orig_user_4 = Image.open(os.path.join(temp_png_dtcs[0], f'slice_{(N_4-1):03d}.png'))
+            img_fnl_user_4 = Image.open(os.path.join(temp_png_masks[0], f'slice_{(N_4-1):03d}.png'))
 
             st.write('')
             col1, col2 = st.columns(2)
